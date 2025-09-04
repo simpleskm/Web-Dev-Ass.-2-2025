@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartstar Digital | Enhanced HTML5 Content & Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    header {
+      background: #aaa;
+      color: #bfbf;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      color: #0d1b2a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #666;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background: #e9ecef;
+    }
+    fieldset {
+      border: 2px solid #0d1b2a;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+      color: #0d1b2a;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      width: auto;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+    input[type="submit"]:hover {
+      background: #0056b3;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smartstar Digital</h1>
+    <p>Empowering your business with smart digital solutions 🚀</p>
+  </header>
+
+  <!-- Services List -->
+  <section>
+    <h2>Our Core Services</h2>
+    <ul>
+      <li>🌐 Website Development & Design</li>
+      <li>📱 Mobile App Development</li>
+      <li>📈 Digital Marketing & SEO</li>
+      <li>🎨 Branding & Graphic Design</li>
+      <li>💻 IT Consulting & Cloud Solutions</li>
+    </ul>
+  </section>
+
+  <!-- Service Packages Table -->
+  <section>
+    <h2>Service Packages</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Package</th>
+          <th>Includes</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Starter</td>
+          <td>Basic Website + SEO Setup</td>
+          <td>$299</td>
+        </tr>
+        <tr>
+          <td>Professional</td>
+          <td>Website + SEO + Digital Marketing</td>
+          <td>$499</td>
+        </tr>
+        <tr>
+          <td>Enterprise</td>
+          <td>All Services + Custom Solutions</td>
+          <td>Contact Us</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media -->
+  <section>
+    <h2>Smartstar Digital in Action</h2>
+    <img src="C:\Users\Calm Online\Pictures\Smartstar Creatives\1.jpg" alt="Smartstar Digital Team at Work">
+    <p>Our recent promotional video:</p>
+    <video width="500" controls>
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+    <p>Client testimonial (audio):</p>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Inquiry Form -->
+  <section>
+    <h2>Get in Touch with Smartstar Digital</h2>
+    <form action="#" method="post">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Jane Doe" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@domain.com" required>
+
+        <label for="phone">Phone Number (10 digits):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Project Details</legend>
+        <label for="service">Select a Service:</label>
+        <select id="service" name="service" required>
+          <option value="">-- Choose a Service --</option>
+          <option value="web">Website Development</option>
+          <option value="app">Mobile App</option>
+          <option value="marketing">Digital Marketing</option>
+          <option value="branding">Branding</option>
+          <option value="consulting">IT Consulting</option>
+        </select>
+
+        <label for="budget">Estimated Budget ($):</label>
+        <input type="number" id="budget" name="budget" min="100" step="50" placeholder="500">
+
+        <label for="details">Project Details:</label>
+        <textarea id="details" name="details" rows="4" placeholder="Tell us about your project..." required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>
+          <input type="checkbox" name="subscribe" checked>
+          Subscribe me to Smartstar Digital’s newsletter
+        </label>
+
+        <label>
+          <input type="radio" name="contact" value="email" checked>
+          Contact me by Email
+        </label>
+        <label>
+          <input type="radio" name="contact" value="phone">
+          Contact me by Phone
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit Inquiry">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Smartstar Digital. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
